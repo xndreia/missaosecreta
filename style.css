@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #33ff33;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  overflow: hidden;
+}
+
+.terminal {
+  padding: 20px;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#output {
+  white-space: pre-wrap;
+  overflow-y: auto;
+  flex-grow: 1;
+  margin-bottom: 10px;
+  animation: fadein 1s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+#inputArea {
+  display: flex;
+  gap: 10px;
+}
+
+#playerInput {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 1.1rem;
+  background-color: #111;
+  color: #33ff33;
+  border: 1px solid #33ff33;
+}
+
+button {
+  background-color: #33ff33;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
